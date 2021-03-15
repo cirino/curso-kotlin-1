@@ -40,10 +40,17 @@ fun main() {
 }
 
 
-class Conta(var titular: String, var numero: Int) {
+class Conta(
+	var titular: String,
+	val numero: Int
+) {
 
 	var saldo = 0.0
 		private set
+
+	init {
+		println("Estudando com o curso da Alura")
+	}
 
 	fun deposita(valor: Double) {
 		if (valor >= 0) {
